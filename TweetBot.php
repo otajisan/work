@@ -18,14 +18,10 @@
 
     var_dump($message);
 
-    $response = $oAuth->OAuthRequest($TWITTER_STATUS_UPDATE_URL, $method, array('status'=> $message));
+    $response = $oAuth->post('statuses/update', array('status' => $message));
 
     // 結果出力
-    $result = json_decode($response);
-
-    print '<pre>';
-    var_dump($result);
-    print '</pre>';
+    var_dump($response);
 
     /**
      * 投稿メッセージを取得する
