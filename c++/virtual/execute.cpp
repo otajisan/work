@@ -1,9 +1,11 @@
 #include "Parent.cpp"
+#include "Child.cpp"
 
 int main(){
 
-        Parent pt;
-        pt.showMessage("Hello!");
+        Child ch;
+        ch.setMessage("Hello!");
+	ch.showMessage();
 
         return 0;
 }

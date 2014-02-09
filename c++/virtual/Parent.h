@@ -5,5 +5,6 @@ class Parent{
 
 public:
 
-	void showMessage(const char* message);
+	const char* message;
+	void showMessage();
 };

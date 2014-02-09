@@ -4,7 +4,7 @@
 /**
  * メッセージを出力する
  */
-void Parent::showMessage(const char* message){
-	std::cout << "[message]" << message << std::endl;
+void Parent::showMessage(){
+	std::cout << "[message]" << this->message << std::endl;
 }
 
